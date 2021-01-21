@@ -23,7 +23,7 @@ function create_joke() {
     return new Promise((resolve, reject) => {
 
         const xhr = new XMLHttpRequest();
-        xhr.open("GET", "http://api.icndb.com/jokes/random", true);
+        xhr.open("GET", "https://api.icndb.com/jokes/random", true);
         xhr.onload = function() {
             if (this.status === 200) {
                 const response = JSON.parse(this.responseText);
